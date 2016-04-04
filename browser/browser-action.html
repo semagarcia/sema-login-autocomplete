@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+  		<link rel="stylesheet" media="screen" href="./../styles/bootstrap.min.css" />
+  		<link rel="stylesheet" media="screen" href="./../styles/main.css" />
+  	</head>
+  	
+  	<body class="sema-sla">
+  		<div class="row text-center">
+  			<h1>Sema Login Autocompleter</h1>
+  		</div>
+
+		<div id="mainContent" class="col-sm-12">
+			<div class="row" style="margin:24px 6px 12px 6px;">
+				<span class="glyphicon glyphicon-hand-right" aria-hidden="true" style="float:left; padding-right:6px"></span>
+				<p id="msgHomeDescription"></p>
+			</div>
+
+			<div class="row">
+	  			<div class="col-sm-1 icon-row-aligned">
+	  				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+	  			</div>
+	  			<div class="col-sm-5">
+	  				<span id="msgSelectEnvironment" style="font-size: 18pt">Select an environment:</span>
+	  			</div>
+				<div class="col-sm-6">
+					<select id="environmentValues" class="btn btn-default margin-left-12" data-selector="envSelector">
+						<option id="msgSelectEnvironmentOption" value="0">(Please select an environment)</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row" style="margin:12px 6px"></div>
+
+			<div class="row">
+	  			<div class="col-sm-1 icon-row-aligned">
+	  				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+	  			</div>
+	  			<div class="col-sm-5">
+	  				<span id="msgSelectUser" style="font-size: 18pt">Select an user:</span>
+	  			</div>
+				<div class="col-sm-6">
+					<select id="userPassValues" class="btn btn-default margin-left-12" data-selector="userSelector">
+						<option id="msgSelectCredsOption" value="0">(Please select credentials)</option>
+					</select>
+				</div>
+			</div>
+
+			<div id="selectedUserInfo" class="row" style="margin:12px 6px; display:none">
+				<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="float:left; padding-right:6px"></span> 
+				<p id="selectedUserInfoDescription" style="float:left"></p>
+			</div>
+		</div>
+
+
+		<!-- -->
+		<div id="aboutContent" class="col-sm-12" style="display:none">
+			<p>Lorem ipsum bla, bla, bla...</p>
+			<p>Lorem ipsum bla, bla, bla...</p>
+			<p>Lorem ipsum bla, bla, bla...</p>
+			<p>Lorem ipsum bla, bla, bla...</p>
+		</div>
+
+		<!-- Bottom bar -->
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<div class="navbar-header">
+					<a id="home" class="navbar-brand" href="#">
+						<span id="msgSlaHome">SLA Home</span> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a id="injectLoginCredentials" href="#"><span id="msgLoginInject">Insert!</span></a></li>
+						<li><a id="configure" href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <span id="msgSettings">Settings</span></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<span id="msgMoreOptions">More options</span> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a id="cleanData" href="#"><span id="msgCleanData">Clean all data</span></a></li>
+								<!--<li><a id="" href="#"><span id="msgChangeLang">Change language</span></a></li>-->
+								<li><a id="help" href="#"><span id="msgHelp">Help</span></a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header"><span id="msgExportSettings">Export configuration</span></li>
+								<li><a id="exportToFile" href="#"><span id="msgExportToFile">To file</span></a></li>
+								<li><a id="exportToClipboard" href="#"><span id="msgExportToClipboard">To clipboard</span></a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header"><span id="msgImportSettings">Import configuration</span></li>
+								<li><a id="importFromFile" href="#"><span id="msgImportFromFile">From file</span></a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header"><span id="msgSuggestComms">Suggest &amp; Comments</span></li>
+								<li><a id="contact" href="#"><span id="msgContact">Contact with the owner</span></a></li>
+								<li><a id="fork" href="#"><span id="msgGithubFork">Fork it in GitHub</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#" id="about"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> <span id="msgAbout">About...</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- scripts imports -->
+  		<script src="../libs/jquery.js"></script>
+  		<script src="../libs/lodash.js"></script>
+  		<script src="../libs/bootstrap.min.js"></script>
+  		<script src="../libs/chrome-storage-util.js"></script>
+  		<script src="browser-action.js"></script>
+  	</body>
+</html>

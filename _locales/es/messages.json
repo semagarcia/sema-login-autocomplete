@@ -1,0 +1,482 @@
+{
+	"extName" : {
+		"message" : "Sema Login Autocompleter",
+		"description" : "es-desc"
+	},
+
+
+	// ------------------------------------------------------
+	//                Browser Action
+	// ------------------------------------------------------
+
+	"msgHomeDescription" : {
+		"message" : "es-Lorem Ipsum",
+		"description" : "es-Lorem Ipsum"
+	},
+
+	"msgSelectEnvironment" : {
+		"message" : "Seleccione un entorno:",
+		"description" : ""
+	},
+
+	"msgSelectEnvironmentOption" : {
+		"message" : "(Por favor, seleccione un entorno)",
+		"description" : ""
+	},
+
+	"msgSelectUser" : {
+		"message" : "Seleccione credenciales:",
+		"description" : ""
+	},
+
+	"msgSelectCredsOption" : {
+		"message" : "(Por favor, seleccione unos credenciales)",
+		"description" : ""
+	},
+
+	"msgSlaHome" : {
+		"message" : "SLA Home",
+		"description" : ""
+	},
+
+	"msgLoginInject" : {
+		"message" : "¡Insertar!",
+		"description" : ""
+	},
+
+	"msgSettings" : {
+		"message" : "Configuración",
+		"description" : ""
+	},
+
+	"msgMoreOptions" : {
+		"message" : "Más opciones",
+		"description" : ""
+	},
+
+	"msgCleanData" : {
+		"message" : "Borrar datos",
+		"description" : ""
+	},
+
+	"msgHelp" : {
+		"message" : "Ayuda",
+		"description" : ""
+	},
+
+	"msgExportSettings" : {
+		"message" : "Exportar configuración",
+		"description" : ""
+	},
+
+	"msgExportToFile" : {
+		"message" : "A un fichero",
+		"description" : ""
+	},
+
+	"msgImportSettings" : {
+		"message" : "Importar configuración",
+		"description" : ""
+	},
+
+	"msgImportFromFile" : {
+		"message" : "Desde un fichero",
+		"description" : ""
+	},
+
+	"msgExportToClipboard" : {
+		"message" : "Al portapapeles",
+		"description" : ""
+	},
+
+	"msgSuggestComms" : {
+		"message" : "Sugerencias y comentarios",
+		"description" : ""
+	},
+
+	"msgContact" : {
+		"message" : "Contactar con el desarrollador",
+		"description" : ""
+	},
+
+	"msgGithubFork" : {
+		"message" : "Fork en Github",
+		"description" : ""
+	},
+
+	"msgAbout" : {
+		"message" : "Acerca de...",
+		"description" : ""
+	},
+
+	// ------------------------------------------------------
+	//                Preferences
+	// ------------------------------------------------------
+
+	// Environments tab
+	"msgPreferenceTitle" : {
+		"message" : "Configuración de entornos y credenciales",
+		"description" : ""
+	},
+
+	"msgPreferencesIntroduction" : {
+		"message" : "Ventana de configuración para bla, bla, bla...",
+		"description" : ""
+	},
+
+	"msgEnvPreferencesTab" : {
+		"message" : "Gestión de entornos",
+		"description" : ""
+	},
+
+	"msgEnvironments" : {
+		"message" : "Entornos",
+		"description" : ""
+	},
+
+	"msgCredentials" : {
+		"message" : "Credenciales",
+		"description" : ""
+	},
+
+	"msgPreferences" : {
+		"message" : "Preferencias",
+		"description" : ""
+	},
+
+	"msgAddNewEnv" : {
+		"message" : "Nuevo entorno",
+		"description" : ""
+	},
+
+	"msgModifyEnv" : {
+		"message" : "Modificar entorno",
+		"description" : ""
+	},
+
+	"msgDeleteEnv" : {
+		"message" : "Eliminar entorno",
+		"description" : ""
+	},
+
+	"msgCreateNewEnvTitle" : {
+		"message" : "Crear nuevo entorno",
+		"description" : ""
+	},
+
+	"msgEnvLabel" : {
+		"message" : "Entorno:",
+		"description" : ""
+	},
+
+	"msgAddEnvButton" : {
+		"message" : "Añadir nuevo entorno",
+		"description" : ""
+	},
+
+	"msgModifyEnvTitle" : {
+		"message" : "Modificar entorno",
+		"description" : ""
+	},
+
+	"msgModifyEnvSelectorLabel" : {
+		"message" : "Entornos:",
+		"description" : ""
+	},
+
+	"msgModifyEnvDefaultOption" : {
+		"message" : "(Por favor, seleccione el entorno a modificar)",
+		"description" : ""
+	},
+
+	"msgModifyEnvLabel" : {
+		"message" : "Nuevo nombre para este entorno:",
+		"description" : ""
+	},
+
+	"msgModifyEnvButton" : {
+		"message" : "Modificar este entorno",
+		"description" : ""
+	},
+
+	"msgDeleteEnvSelectorLabel" : {
+		"message" : "Entorno",
+		"description" : ""
+	},
+
+	"msgDeleteEnvTitle" : {
+		"message" : "Eliminar entorno existente",
+		"description" : ""
+	},
+
+	"msgDeleteEnvDefaultOption" : {
+		"message" : "(Por favor, seleccione un entorno a eliminar)",
+		"description" : ""
+	},
+
+	"msgDeleteEnvButton" : {
+		"message" : "Eliminar este entorno",
+		"description" : ""
+	},
+
+	// User tab
+	"msgUserCredsPreferencesTab" : {
+		"message" : "Gestión de usuarios y credenciales",
+		"description" : ""
+	},
+
+	"msgAddNewUser" : {
+		"message" : "Añadir usuario",
+		"description" : ""
+	},
+
+	"msgModifyUser" : {
+		"message" : "Modificar usuario",
+		"description" : ""
+	},
+
+	"msgDeleteUser" : {
+		"message" : "Eliminar usuario",
+		"description" : ""
+	},
+
+	"msgCreateNewUser" : {
+		"message" : "Crear nuevas credenciales",
+		"description" : ""
+	},
+
+	"msgCreateUserLabel" : {
+		"message" : "Entorno *",
+		"description" : ""
+	},
+
+	"msgCreateUserEnvSelector" : {
+		"message" : "(Por favor, seleccione un entorno)",
+		"description" : ""
+	},
+
+	"msgAddUserUsernameLabel" : {
+		"message" : "Usuario *",
+		"description" : ""
+	},
+
+	"msgAddUserPasswordLabel" : {
+		"message" : "Contraseña *",
+		"description" : ""
+	},
+
+	"msgAddUserUserSelector" : {
+		"message" : "Selector del usuario",
+		"description" : ""
+	},
+
+	"msgAddUserPassSelector" : {
+		"message" : "Selector de contraseña",
+		"description" : ""
+	},
+
+	"msgAddUserDescription" : {
+		"message" : "Descripción",
+		"description" : ""
+	},
+
+	"msgAddNewUserButton" : {
+		"message" : "Añadir credenciales",
+		"description" : ""
+	},
+
+	"msgModifyUser" : {
+		"message" : "Modificar credenciales",
+		"description" : ""
+	},
+
+	"msgEditUserLabel" : {
+		"message" : "Entorno",
+		"description" : ""
+	},
+
+	"msgEditUserEnvSelector" : {
+		"message" : "(Por favor, selecciona un entorno)",
+		"description" : ""
+	},
+
+	"msgEditUserEnvSelectorLabel" : {
+		"message" : "Usuario",
+		"description" : ""
+	},
+
+	"msgModifyUserSelector" : {
+		"message" : "(Por favor, seleccione unas credenciales)",
+		"description" : ""
+	},
+
+	"msgEditUserUserLabel" : {
+		"message" : "Usuario *",
+		"description" : ""
+	},
+
+	"msgEditUserPassLabel" : {
+		"message" : "Contraseña *",
+		"description" : ""
+	},
+
+	"msgEditUserUserSelectorLabel" : {
+		"message" : "Selector de usuario",
+		"description" : ""
+	},
+
+	"msgEditUserPassSelectorLabel" : {
+		"message" : "Selector de contraseña",
+		"description" : ""
+	},
+
+	"msgEditUserDescriptionLabel" : {
+		"message" : "Descripción",
+		"description" : ""
+	},
+
+	"msgEditUserButton" : {
+		"message" : "Modificar credenciales",
+		"description" : ""
+	},
+
+	"msgModifyUserTitle" : {
+		"message" : "Modificar credenciales",
+		"description" : ""
+	},
+
+	"msgDeleteUserTitle" : {
+		"message" : "Eliminar credenciales existentes",
+		"description" : ""
+	},
+
+	"msgDeleteUserLabel" : {
+		"message" : "Entorno",
+		"description" : ""
+	},
+
+	"msgDeleteUserEnvSelector" : {
+		"message" : "(Por favor, selecione un entorno)",
+		"description" : ""
+	},
+
+	"msgDeleteUserEnvSelectorLabel" : {
+		"message" : "Credenciales",
+		"description" : ""
+	},
+
+	"msgDeleteUserSelector" : {
+		"message" : "(Por favor, seleccione unas credenciales)",
+		"description" : ""
+	},
+
+	"msgDeleteUserButton" : {
+		"message" : "Eliminar credenciales",
+		"description" : ""
+	},
+
+	// Preferences tab
+	"msgExtesionPreferencesTab" : {
+		"message" : "Preferencias",
+		"description" : ""
+	},
+
+
+	// ------------------------------------------------------
+	//                Errors
+	// ------------------------------------------------------
+	"msgEnvAddedOK" : {
+		"message" : "¡Entorno creado! :-)",
+		"description" : ""
+	},
+
+	"msgEnvEmptyName" : {
+		"message" : "Es necesario introducir un nombre",
+		"description" : ""
+	},
+
+	"msgEnvModifiedOK" : {
+		"message" : "¡Entorno modificado! :-)",
+		"description" : ""
+	},
+
+	"msgEnvNameNeeded" : {
+		"message" : "Debe especificar un nombre de entorno",
+		"description" : ""
+	},
+
+	"msgEnvDeletedOK" : {
+		"message" : "¡Entorno añadido! :-)",
+		"description" : ""
+	},
+
+	"msgEnvDeleteNoSelectedItem" : {
+		"message" : "¡Debe seleccionar un elemento!",
+		"description" : ""
+	},
+
+	"msgCredentialsAddedOK" : {
+		"message" : "¡Credenciales creadas! :-)",
+		"description" : ""
+	},
+
+	"msgCredentialsModifiedOK" : {
+		"message" : "¡Credenciales modificadas correctamente! :-)",
+		"description" : ""
+	},
+
+	"msgSelectAnEnvironment" : {
+		"message" : "Por favor, seleccione primero un entorno",
+		"description" : ""
+	},
+
+	"msgSelectCredentialsToDelete" : {
+		"message" : "Por favor, seleccione las credenciales a eliminar",
+		"description" : ""
+	},
+
+	"msgCredentialsDeletedOK" : {
+		"message" : "¡Credenciales eliminadas correctamente! :-)",
+		"description" : ""
+	},
+
+	"msgSelectOneEnvironment" : {
+		"message" : "Por favor, seleccione un entorno...",
+		"description" : ""
+	},
+
+	"msgUsernameNeeded" : {
+		"message" : "Por favor, escriba el nombre de usuario",
+		"description" : ""
+	},
+
+	"msgPasswordNeeded" : {
+		"message" : "Por favor, escriba una contraseña",
+		"description" : ""
+	},	
+
+	"msgAnErrorHasOcurred" : {
+		"message" : "Ha ocurrido un error",
+		"description" : ""
+	},
+
+	"msgSelectAnUser" : {
+		"message" : "Seleccione un usuario",
+		"description" : ""
+	}
+
+	/*"bye": {
+		"message": "Goodbye, $USER$. Come back to $OUR_SITE$ soon!",
+		"description": "Say goodbye to the user",
+		"placeholders": {
+			"our_site": {
+				"content": "Example.com",
+			},
+			"user": {
+				"content": "$1",
+				"example": "Cira"
+			}
+		}
+	},*/
+
+}

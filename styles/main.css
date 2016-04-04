@@ -1,0 +1,20 @@
+.sema-sla {
+	width: 800px;
+	height: 400px;
+	background-color: #e1cbcb;
+	padding: 12px;
+}
+
+.icon-row-aligned {
+	padding-left: 30px;
+	font-size: 18pt;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.margin-left-12 {
+	margin-left: 12px;
+}
+
+.hidden {
+	display: none;
+}

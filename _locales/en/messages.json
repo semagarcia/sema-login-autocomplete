@@ -1,0 +1,468 @@
+{
+	"extName" : {
+		"message" : "Sema Login Autocompleter",
+		"description" : "en-desc"
+	},
+
+
+	// ------------------------------------------------------
+	//                Browser Action
+	// ------------------------------------------------------
+
+	"msgHomeDescription" : {
+		"message" : "en-Lorem Ipsum",
+		"description" : "en-Lorem Ipsum"
+	},
+
+	"msgSelectEnvironment" : {
+		"message" : "Select an environment:",
+		"description" : ""
+	},
+
+	"msgSelectEnvironmentOption" : {
+		"message" : "(Please select an environment)",
+		"description" : ""
+	},
+
+	"msgSelectUser" : {
+		"message" : "Select an user:",
+		"description" : ""
+	},
+
+	"msgSelectCredsOption" : {
+		"message" : "(Please select credentials)",
+		"description" : ""
+	},
+
+	"msgSlaHome" : {
+		"message" : "SLA Home",
+		"description" : ""
+	},
+
+	"msgLoginInject" : {
+		"message" : "Insert!",
+		"description" : ""
+	},
+
+	"msgSettings" : {
+		"message" : "Settings",
+		"description" : ""
+	},
+
+	"msgMoreOptions" : {
+		"message" : "More options",
+		"description" : ""
+	},
+
+	"msgCleanData" : {
+		"message" : "Clean all data",
+		"description" : ""
+	},
+
+	"msgHelp" : {
+		"message" : "msgHelp",
+		"description" : ""
+	},
+
+	"msgExportSettings" : {
+		"message" : "Export configuration",
+		"description" : ""
+	},
+
+	"msgExportToFile" : {
+		"message" : "To file",
+		"description" : ""
+	},
+
+	"msgImportSettings" : {
+		"message" : "Import configuration",
+		"description" : ""
+	},
+
+	"msgImportFromFile" : {
+		"message" : "From file",
+		"description" : ""
+	},
+
+	"msgExportToClipboard" : {
+		"message" : "To clipboard",
+		"description" : ""
+	},
+
+	"msgSuggestComms" : {
+		"message" : "Suggest &amp; comments",
+		"description" : ""
+	},
+
+	"msgContact" : {
+		"message" : "Contact with the owner",
+		"description" : ""
+	},
+
+	"msgGithubFork" : {
+		"message" : "Fork it on Github",
+		"description" : ""
+	},
+
+	"msgAbout" : {
+		"message" : "About...",
+		"description" : ""
+	},
+
+	// ------------------------------------------------------
+	//                Preferences
+	// ------------------------------------------------------
+
+	// Environments tab
+	"msgPreferenceTitle" : {
+		"message" : "Environment & Users Configuration",
+		"description" : ""
+	},
+
+	"msgPreferencesIntroduction" : {
+		"message" : "Configuration bla, bla, bla...",
+		"description" : ""
+	},
+
+	"msgEnvPreferencesTab" : {
+		"message" : "Environments management",
+		"description" : ""
+	},
+
+	"msgEnvironments" : {
+		"message" : "Environments",
+		"description" : ""
+	},
+
+	"msgCredentials" : {
+		"message" : "Credentials",
+		"description" : ""
+	},
+
+	"msgPreferences" : {
+		"message" : "Preferences",
+		"description" : ""
+	},
+
+	"msgAddNewEnv" : {
+		"message" : "Add new env.",
+		"description" : ""
+	},
+
+	"msgModifyEnv" : {
+		"message" : "Modify env.",
+		"description" : ""
+	},
+
+	"msgDeleteEnv" : {
+		"message" : "Delete env.",
+		"description" : ""
+	},
+
+	"msgCreateNewEnvTitle" : {
+		"message" : "Create a new environment",
+		"description" : ""
+	},
+
+	"msgEnvLabel" : {
+		"message" : "Environment:",
+		"description" : ""
+	},
+
+	"msgAddEnvButton" : {
+		"message" : "Add this environment",
+		"description" : ""
+	},
+
+	"msgModifyEnvTitle" : {
+		"message" : "Modify an existing environment",
+		"description" : ""
+	},
+
+	"msgModifyEnvSelectorLabel" : {
+		"message" : "Environments:",
+		"description" : ""
+	},
+
+	"msgModifyEnvDefaultOption" : {
+		"message" : "(Please select an environment to modify)",
+		"description" : ""
+	},
+
+	"msgModifyEnvLabel" : {
+		"message" : "Please, modify the new environment name:",
+		"description" : ""
+	},
+
+	"msgModifyEnvButton" : {
+		"message" : "Modify this environment",
+		"description" : ""
+	},
+
+	"msgDeleteEnvSelectorLabel" : {
+		"message" : "Environment",
+		"description" : ""
+	},
+
+	"msgDeleteEnvTitle" : {
+		"message" : "Delete an existing environment",
+		"description" : ""
+	},
+
+	"msgDeleteEnvDefaultOption" : {
+		"message" : "(Please select an environment to delete)",
+		"description" : ""
+	},
+
+	"msgDeleteEnvButton" : {
+		"message" : "Delete this environment",
+		"description" : ""
+	},
+
+	// User tab
+	"msgUserCredsPreferencesTab" : {
+		"message" : "User credentials management",
+		"description" : ""
+	},
+
+	"msgAddNewUser" : {
+		"message" : "Add new user",
+		"description" : ""
+	},
+
+	"msgModifyUser" : {
+		"message" : "Modify user",
+		"description" : ""
+	},
+
+	"msgDeleteUser" : {
+		"message" : "Delete user",
+		"description" : ""
+	},
+
+	"msgCreateNewUser" : {
+		"message" : "Create a new user entry",
+		"description" : ""
+	},
+
+	"msgCreateUserLabel" : {
+		"message" : "Environment *",
+		"description" : ""
+	},
+
+	"msgCreateUserEnvSelector" : {
+		"message" : "(Please select an environment)",
+		"description" : ""
+	},
+
+	"msgAddUserUsernameLabel" : {
+		"message" : "User *",
+		"description" : ""
+	},
+
+	"msgAddUserPasswordLabel" : {
+		"message" : "Password *",
+		"description" : ""
+	},
+
+	"msgAddUserUserSelector" : {
+		"message" : "User selector",
+		"description" : ""
+	},
+
+	"msgAddUserPassSelector" : {
+		"message" : "Password selector",
+		"description" : ""
+	},
+
+	"msgAddUserDescription" : {
+		"message" : "Description",
+		"description" : ""
+	},
+
+	"msgAddNewUserButton" : {
+		"message" : "Add these credentials",
+		"description" : ""
+	},
+
+	"msgModifyUser" : {
+		"message" : "Modify an existing user credentials",
+		"description" : ""
+	},
+
+	"msgEditUserLabel" : {
+		"message" : "Environment",
+		"description" : ""
+	},
+
+	"msgEditUserEnvSelector" : {
+		"message" : "(Please select an environment)",
+		"description" : ""
+	},
+
+	"msgEditUserEnvSelectorLabel" : {
+		"message" : "User",
+		"description" : ""
+	},
+
+	"msgModifyUserSelector" : {
+		"message" : "(Please select an user)",
+		"description" : ""
+	},
+
+	"msgEditUserUserLabel" : {
+		"message" : "User *",
+		"description" : ""
+	},
+
+	"msgEditUserPassLabel" : {
+		"message" : "Password *",
+		"description" : ""
+	},
+
+	"msgEditUserUserSelectorLabel" : {
+		"message" : "User selector",
+		"description" : ""
+	},
+
+	"msgEditUserPassSelectorLabel" : {
+		"message" : "Password selector",
+		"description" : ""
+	},
+
+	"msgEditUserDescriptionLabel" : {
+		"message" : "Description",
+		"description" : ""
+	},
+
+	"msgEditUserButton" : {
+		"message" : "Modify these credentials",
+		"description" : ""
+	},
+
+	"msgModifyUserTitle" : {
+		"message" : "Modify credentials",
+		"description" : ""
+	},
+
+	"msgDeleteUserTitle" : {
+		"message" : "Delete an existing credentials",
+		"description" : ""
+	},
+
+	"msgDeleteUserLabel" : {
+		"message" : "Environment",
+		"description" : ""
+	},
+
+	"msgDeleteUserEnvSelector" : {
+		"message" : "(Please select an environment)",
+		"description" : ""
+	},
+
+	"msgDeleteUserEnvSelectorLabel" : {
+		"message" : "User",
+		"description" : ""
+	},
+
+	"msgDeleteUserSelector" : {
+		"message" : "(Please select an user)",
+		"description" : ""
+	},
+
+	"msgDeleteUserButton" : {
+		"message" : "Delete these credentials",
+		"description" : ""
+	},
+
+	// Preferences tab
+	"msgExtesionPreferencesTab" : {
+		"message" : "Preferences",
+		"description" : ""
+	},
+
+
+	// ------------------------------------------------------
+	//                Errors
+	// ------------------------------------------------------
+	"msgEnvAddedOK" : {
+		"message" : "Environment added! :-)",
+		"description" : ""
+	},
+
+	"msgEnvEmptyName" : {
+		"message" : "You have to write a name",
+		"description" : ""
+	},
+
+	"msgEnvModifiedOK" : {
+		"message" : "Environment modified! :-)",
+		"description" : ""
+	},
+
+	"msgEnvNameNeeded" : {
+		"message" : "You have to supply a new environment name",
+		"description" : ""
+	},
+
+	"msgEnvDeletedOK" : {
+		"message" : "Environment deleted! :-)",
+		"description" : ""
+	},
+
+	"msgEnvDeleteNoSelectedItem" : {
+		"message" : "You have to select one item!",
+		"description" : ""
+	},
+
+	"msgCredentialsAddedOK" : {
+		"message" : "Users credentials succesfully added! :-)",
+		"description" : ""
+	},
+
+	"msgCredentialsModifiedOK" : {
+		"message" : "Users credentials succesfully modified! :-)",
+		"description" : ""
+	},
+
+	"msgSelectAnEnvironment" : {
+		"message" : "Please, select an environment first",
+		"description" : ""
+	},
+
+	"msgSelectCredentialsToDelete" : {
+		"message" : "Please, select the credentials to delete",
+		"description" : ""
+	},
+
+	"msgCredentialsDeletedOK" : {
+		"message" : "Users credentials succesfully deleted! :-)",
+		"description" : ""
+	},
+
+	"msgSelectOneEnvironment" : {
+		"message" : "Please, select one environment...",
+		"description" : ""
+	},
+
+	"msgUsernameNeeded" : {
+		"message" : "Please, write the username",
+		"description" : ""
+	},
+
+	"msgPasswordNeeded" : {
+		"message" : "Please, write the password",
+		"description" : ""
+	},	
+
+	"msgAnErrorHasOcurred" : {
+		"message" : "An error has occurred",
+		"description" : ""
+	},
+
+	"msgSelectAnUser" : {
+		"message" : "Select an user",
+		"description" : ""
+	}
+
+}

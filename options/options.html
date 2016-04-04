@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" media="screen" href="./../styles/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="text-center" style="width:500px">
+			<h3 id="msgPreferenceTitle">Environment &amp; Users Configuration</h3>
+		</div>
+
+		<div class="col-sm-12">
+			<p id="msgPreferencesIntroduction">Lorem ipsum...</p>
+		</div>
+
+		<div class="col-sm-12">
+			<ul id="optionTabs" class="nav nav-tabs">
+				<li class="tabs tabEnvs active" role="presentation"><a href="#"><span id="msgEnvironments">Environments</span></a></li>
+				<li class="tabs tabUsers" role="presentation"><a href="#"><span id="msgCredentials">Credentials</span></a></li>
+				<li class="tabs tabPreferences" role="presentation"><a href="#"><span id="msgPreferences">Preferences</span></a></li>
+			</ul>
+		</div>
+
+		<!-- ENVIRONMENTS MANAGEMENT TAB -->
+		<div id="tabEnvs" class="col-sm-12 content-option-tab">
+			<br />
+			<p id="msgEnvPreferencesTab">Environments management</p>
+			<div class="container col-sm-12">	
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#envSubTab1" data-toggle="tab"><span id="msgAddNewEnv">Add new env.</span></a></li>
+					<li><a href="#envSubTab2" data-toggle="tab"><span id="msgModifyEnv">Modify env.</span></a></li>
+					<li><a href="#envSubTab3" data-toggle="tab"><span id="msgDeleteEnv">Delete env.</span></a></li>
+				</ul>
+
+				<div class="tab-content col-sm-12">
+					<!-- Error container -->
+					<div id="envErrorAlertContainer"></div>
+
+					<!-- -->
+					<div class="tab-pane active" id="envSubTab1">
+						<h4 id="msgCreateNewEnvTitle">Create a new environment</h4>
+						<div style="margin: 6px 0">
+							<label id="msgEnvLabel" for="addNewEnv">Environment:</label>
+							<input style="width:100%" type="text" id="addNewEnv" placeholder="Write the new environment" />
+						</div>
+						<button id="b1" class="form-control btn btn-primary"><span id="msgAddEnvButton">Add this environment</span></button>
+					</div>
+
+					<!-- -->
+					<div class="tab-pane" id="envSubTab2">
+						<h4 id="msgModifyEnvTitle">Modify an existing environment</h4>
+						<div style="margin: 6px 0">
+							<label id="msgModifyEnvSelectorLabel" for="environmentModifySelector">Environments:</label>
+							<select id="environmentModifySelector" data-selector="envSelector" style="width: 100%">
+								<option id="msgModifyEnvDefaultOption" value="0" selected>(Please select an environment to modify)</option>
+							</select>
+						</div>
+						<div style="margin: 6px 0">
+							<label id="msgModifyEnvLabel" for="envToModify">Please, modify the new environment name:</label>
+							<input style="width:100%" type="text" id="envToModify" />
+						</div>
+						<button id="b2" class="form-control btn btn-primary"><span id="msgModifyEnvButton">Modify this environment</span></button>
+					</div>
+
+					<!-- -->
+					<div class="tab-pane" id="envSubTab3">
+						<h4 id="msgDeleteEnvTitle">Delete an existing environment</h4>
+						<div style="margin: 6px 0">
+							<label id="msgDeleteEnvSelectorLabel" for="environmentDeleteSelector">Environments:</label>
+							<select id="environmentDeleteSelector" data-selector="envSelector" style="width: 100%">
+								<option id="msgDeleteEnvDefaultOption" value="0" selected>(Please select an environment to delete)</option>
+							</select>
+						</div>
+						<button id="b3" class="form-control btn btn-primary"><span id="msgDeleteEnvButton">Delete this environment</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -->
+
+		<!-- USERS MANAGEMENT TAB -->
+		<div id="tabUsers" class="col-sm-12 content-option-tab" style="display:none">
+			<br />
+			<p id="msgUserCredsPreferencesTab">User credentials management</p>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#userSubTab1" data-toggle="tab"><span id="msgAddNewUser">Add new user</span></a></li>
+				<li><a href="#userSubTab2" data-toggle="tab"><span id="msgModifyUser">Modify user</span></a></li>
+				<li><a href="#userSubTab3" data-toggle="tab"><span id="msgDeleteUser">Delete user</span></a></li>
+			</ul>
+			<div class="tab-content col-sm-12">
+				<!-- Error container -->
+				<div id="userErrorAlertContainer"></div>
+
+				<!-- Add new credentials -->
+				<div class="tab-pane active" id="userSubTab1">
+					<h4 id="msgCreateNewUser">Create a new user entry</h4>
+					<div style="margin: 6px 0">
+						<label id="msgCreateUserLabel" for="newUserEnvSelector">Environment *</label>
+						<select id="newUserEnvSelector" data-selector="envSelector" style="width: 100%">
+							<option id="msgCreateUserEnvSelector" value="0" selected>(Please select an environment)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label id="msgAddUserUsernameLabel" for="username">User *</label><input type="text" id="username" class="form-control" placeholder="New user">
+						<label id="msgAddUserPasswordLabel" for="password">Password *</label><input type="password" id="password" class="form-control" placeholder="**********">
+						<label id="msgAddUserUserSelector" for="userSelector">User selector</label><input type="text" id="userSelector" class="form-control">
+						<label id="msgAddUserPassSelector" for="passSelector">Password selector</label><input type="text" id="passSelector" class="form-control">
+						<label id="msgAddUserDescription" for="description">Description</label><textarea type="textarea" id="desc" class="form-control" rows="4" cols="20"></textarea>
+					</div>
+					<div class="form-group">
+						<button id="b4" class="form-control btn btn-primary"><span id="msgAddNewUserButton">Add these credentials</span></button>
+					</div>
+				</div>
+
+				<!-- Modify an existing credentials -->
+				<div class="tab-pane" id="userSubTab2">
+					<h4 id="msgModifyUserTitle">Modify an existing user credentials</h4>
+					<div style="margin: 6px 0">
+						<label id="msgEditUserLabel" for="modifyUserEnvSelector">Environment</label>
+						<select id="modifyUserEnvSelector" data-selector="envSelector" style="width: 100%">
+							<option id="msgEditUserEnvSelector" value="0" selected>(Please select an environment)</option>
+						</select>
+					</div>
+					<div style="margin: 6px 0">
+						<label id="msgEditUserEnvSelectorLabel" for="modifyUserSelector">User</label>
+						<select id="modifyUserSelector" data-selector="userSelector" style="width: 100%">
+							<option id="msgModifyUserSelector" value="0" selected>(Please select an user)</option>
+						</select>
+					</div>
+					<div id="modifyUserCredentialsForm" style="margin: 6px 0; display:none">
+						<label id="msgEditUserUserLabel" for="username">User *</label><input type="text" id="m_username" class="form-control" placeholder="New user">
+						<label id="msgEditUserPassLabel" for="password">Password *</label><input type="text" id="m_password" class="form-control" placeholder="**********">
+						<label id="msgEditUserUserSelectorLabel" for="userSelector">User selector</label><input type="text" id="m_userSelector" class="form-control">
+						<label id="msgEditUserPassSelectorLabel" for="passSelector">Password selector</label><input type="text" id="m_passSelector" class="form-control">
+						<label id="msgEditUserDescriptionLabel" for="description">Description</label><textarea type="textarea" id="m_desc" class="form-control" rows="4" cols="20"></textarea>
+					</div>
+					<div class="form-group">
+						<button id="b5" class="form-control btn btn-primary"><span id="msgEditUserButton">Modify these credentials</span></button>
+					</div>
+				</div>
+
+				<!-- Delete user credentials -->
+				<div class="tab-pane" id="userSubTab3">
+					<h4 id="msgDeleteUserTitle">Delete an existing credentials</h4>
+					<div style="margin: 6px 0">
+						<label id="msgDeleteUserLabel" for="deleteUserEnvSelector">Environment</label>
+						<select id="deleteUserEnvSelector" data-selector="envSelector" style="width: 100%">
+							<option id="msgDeleteUserEnvSelector" value="0" selected>(Please select an environment)</option>
+						</select>
+					</div>
+					<div style="margin: 6px 0">
+						<label id="msgDeleteUserEnvSelectorLabel" for="deleteUserSelector">User</label>
+						<select id="deleteUserSelector" data-selector="userSelector" style="width: 100%">
+							<option id="msgDeleteUserSelector" value="0" selected>(Please select an user)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<button id="b6" class="form-control btn btn-primary"><span id="msgDeleteUserButton">Delete these credentials</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -->
+
+		<!-- ENVIRONMENTS MANAGEMENT TAB -->
+		<div id="tabPreferences" class="col-sm-12 content-option-tab" style="display:none">
+			<br />
+			<p id="msgExtesionPreferencesTab">Preferences</p>
+		</div>
+		
+		<div style="margin-bottom: 12px"></div>
+
+		<!-- scripts imports -->
+		<script src="../libs/jquery.js"></script>
+		<script src="../libs/lodash.js"></script>
+  		<script src="../libs/bootstrap.min.js"></script>
+  		<script src="../libs/chrome-storage-util.js"></script>
+		<script src="options.js"></script>
+	</body>
+</html>
