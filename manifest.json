@@ -4,10 +4,8 @@
   "version": "1.0",
   "default_locale" : "en",
   "description" : "Bla, bla, bla",
-  "author" : "Sema",
-  //"content_security_policy": "script-src 'self'; object-src 'self'",
-  // This is how you load Browser Action. Nearly equal to Page one.
-  "browser_action" : {
+  "author" : "Sema (José Manuel García García)",
+  "browser_action" : {   // This is how you load Browser Action. Nearly equal to Page one
       "default_icon" : "icons/16/s2.png",
       "default_title" : "Sema Login Autocompleter Extension",
       "default_popup" : "browser/browser-action.html"
@@ -26,8 +24,7 @@
       }
     }
   },
-  // If we need access to the DOM, we have to use a content script
-  "content_scripts": [
+  "content_scripts": [   // If we need access to the DOM, we have to use a content script
     {
       "matches": ["<all_urls>"],  // "*://*/*"
       "css": ["styles/main.css"],
@@ -44,8 +41,7 @@
     "128" : "icons/128/s2.png"     // Used during installation and by the Chrome Web Store
   },
   "offline_enabled" : true,
-  // Gives access to extension options from Extensions Manager
-  "options_page": "options/options.html",
+  "options_page": "options/options.html",   // Gives access to extension options from Extensions Manager
   "options_ui": {
     "page": "options/options.html",
     "chrome_style": true
@@ -58,9 +54,5 @@
     "storage",
     "tabs",
     "*://*/*"
-    /*"http://youtube.com/*",
-    "https://sites.google.com/*",
-    "http://127.0.0.1:3667/*"*/
   ]
-  // "web_accessible_resources": ["myscript.js"]
 }
