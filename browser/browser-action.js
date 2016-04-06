@@ -70,12 +70,29 @@ $(document).ready(function() {
 
 	//
 	$('#cleanData').click(function() {
-		alert('borrar datos');
+		$('#mainContent').fadeOut('fast', function() {
+			$('#cleanDataContent').fadeIn('fast');
+		});
+	});
+
+	//
+	$('#cleanDataYes').click(function() { 
+		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
+			slaUtils.deleteConfiguration();	
+			$('#mainContent').fadeIn('slow');
+		});
+	});
+
+	//
+	$('#cleanDataNo').click(function() {  
+		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
+			$('#mainContent').fadeIn('slow');
+		});
 	});
 
 	//
 	$('#help').click(function() {
-		alert('borrar datos');
+		alert('helps');
 	});
 
 	//
@@ -99,7 +116,7 @@ $(document).ready(function() {
 	});
 
 	$('#importFromFile').click(function() {
-		alert('Importar desde un .json con el contenido');
+		alert('This feature will be published in the next release!');
 	});
 
 	//
@@ -109,14 +126,16 @@ $(document).ready(function() {
 
 	//
 	$('#fork').click(function() {
-		alert('Fork');
+		chrome.tabs.update({
+     		url: "https://github.com/semagarcia/sema-login-autocompleter"
+		});
 	});
 
 	//
 	$('#about').click(function() {
-		$('#mainContent').fadeOut('fast', function() {
+		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
 			$('#aboutContent').fadeIn('fast');
-		})
+		});
 	});
 
 });

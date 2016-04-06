@@ -12,7 +12,6 @@ var semaSLA = (function() {
 				console.log(chrome.runtime.lastError.message);
 	       		callback(chrome.runtime.lastError.message);
 	   		} else {
-	   			console.log("No hay error, set correcto: ");
 	   			callback(null);
 	   		}
 		});
@@ -23,9 +22,7 @@ var semaSLA = (function() {
 			console.log('Returning from cache');
 			callback(_slaData);
 		} else {
-			console.log('Returning from chrome.storage');
 			getDataFromChromeStorage(function(err, storedValue) {
-				console.log('GetStoredData');
 				if(err) {
 					console.log('Error: ' + err);
 				}
@@ -43,7 +40,6 @@ var semaSLA = (function() {
 	   		}
 
 			// We check if the objet returned has our own specific signature
-			console.log('StoredValue: ', storedValue);
 			if(storedValue && storedValue['sema-sla']) {
 				_slaData = storedValue;
 			} else {
@@ -51,7 +47,7 @@ var semaSLA = (function() {
 					'sema-sla' : {
 						environments : [],
 						users : [],
-						slaConfiguration : { lang : 'en' }
+						slaConfiguration : { }
 					}
 				};
 			}
@@ -59,9 +55,27 @@ var semaSLA = (function() {
 		});
 	}
 
+	function deleteConfig(callback) {
+		_slaData = {
+			'sema-sla' : {
+				environments : [],
+				users : [],
+				slaConfiguration : { }
+			}
+		};
+		synchronize(function(err) {
+			if(err) {
+				callback(err);
+			} else {
+				callback(null);
+			}
+		});
+	}
+
 	return {
 		synchronize : synchronize,
-		getStoredData : getStoredData
+		getStoredData : getStoredData,
+		deleteConfig : deleteConfig 
 	}
 
 })();
@@ -215,6 +229,12 @@ var slaUtils = (function(semaSLA) {
 		});
 	}
 
+	function deleteConfiguration() {
+		semaSLA.deleteConfiguration(function() {
+			console.log("---->");
+		});
+	}
+
 	return {
 		getAllData : getAllData,
 		getEnvironments : getEnvironments,
@@ -225,7 +245,8 @@ var slaUtils = (function(semaSLA) {
 		deleteEnvironment : deleteEnvironment,
 		addNewUserCredentials : addNewUserCredentials,
 		modifyUserCredentials : modifyUserCredentials,
-		deleteUserCredentials : deleteUserCredentials
+		deleteUserCredentials : deleteUserCredentials,
+		deleteConfiguration : deleteConfiguration
 	}
 
 })(semaSLA);
