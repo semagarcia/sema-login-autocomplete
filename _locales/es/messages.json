@@ -10,8 +10,8 @@
 	// ------------------------------------------------------
 
 	"msgHomeDescription" : {
-		"message" : "es-Lorem Ipsum",
-		"description" : "es-Lorem Ipsum"
+		"message" : "Por favor, seleccione de la colección de datos el usuario que desea inyectar en la aplicación web actual.",
+		"description" : ""
 	},
 
 	"msgSelectEnvironment" : {
