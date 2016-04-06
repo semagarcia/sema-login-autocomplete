@@ -230,9 +230,7 @@ var slaUtils = (function(semaSLA) {
 	}
 
 	function deleteConfiguration() {
-		semaSLA.deleteConfiguration(function() {
-			console.log("---->");
-		});
+		semaSLA.deleteConfig(function(err) { });
 	}
 
 	return {

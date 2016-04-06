@@ -78,6 +78,7 @@ $(document).ready(function() {
 	//
 	$('#cleanDataYes').click(function() { 
 		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
+			initBrowserActionDropdowns();
 			slaUtils.deleteConfiguration();	
 			$('#mainContent').fadeIn('slow');
 		});
