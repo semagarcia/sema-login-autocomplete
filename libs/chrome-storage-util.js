@@ -229,8 +229,10 @@ var slaUtils = (function(semaSLA) {
 		});
 	}
 
-	function deleteConfiguration() {
-		semaSLA.deleteConfig(function(err) { });
+	function deleteConfiguration(callback) {
+		semaSLA.deleteConfig(function(err) { 
+			callback(err);
+		});
 	}
 
 	return {

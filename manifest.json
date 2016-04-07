@@ -3,7 +3,7 @@
   "name": "__MSG_extName__",
   "version": "1.0",
   "default_locale" : "en",
-  "description" : "Bla, bla, bla",
+  "description" : "__MSG_extDescription__",
   "author" : "Sema (José Manuel García García)",
   "browser_action" : {   // This is how you load Browser Action. Nearly equal to Page one
       "default_icon" : "icons/16/s2.png",

@@ -8,7 +8,7 @@
 	
 	console.log(LOG_PREFIX + 'Injecting credentials...');
 	
-	//	
+	//	Inject username
 	if(usernameNode && usernameNode.length > 0) {
 		$(usernameNode[0]).val(request.username);  // Inject user
 	} else {
@@ -22,15 +22,12 @@
 		passFound = false;
 	}
 
-	// 
+	// Check if some field has not been injected
 	if(!userFound && !passFound) {
-		alert(LOG_PREFIX + 'Neither user field nor pass field have been found...');
-		console.log(1);
+		alert(LOG_PREFIX + chrome.i18n.getMessage('msgInjectNotFound'));
 	} else if(!userFound && passFound) {
-		alert(LOG_PREFIX + 'User field not found with the given selector');
-		console.log(2);
+		alert(LOG_PREFIX + chrome.i18n.getMessage('msgInjectUsernameNotFound'));
 	} else if(userFound && !passFound) {
-		alert(LOG_PREFIX + 'Password field not found with the given selector');
-		console.log(3);
+		alert(LOG_PREFIX + chrome.i18n.getMessage('msgInjectPasswordNotFound'));
 	}
 })();

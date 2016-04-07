@@ -1,6 +1,11 @@
 {
 	"extName" : {
 		"message" : "Sema Login Autocompleter",
+		"description" : "en-name"
+	},
+
+	"extDescription" : {
+		"message" : "Configure users credentials for each environment of your development web-projects. It's more than an autocomplete feature :-)",
 		"description" : "en-desc"
 	},
 
@@ -41,6 +46,21 @@
 
 	"msgLoginInject" : {
 		"message" : "Insert!",
+		"description" : ""
+	},
+
+	"msgInjectNotFound" : {
+		"message" : "Neither user field nor pass field have been found...",
+		"description" : ""
+	},
+
+	"msgInjectUsernameNotFound" : {
+		"message" : "User field not found with the given selector",
+		"description" : ""
+	},
+
+	"msgInjectPasswordNotFound" : {
+		"message" : "Password field not found with the given selector",
 		"description" : ""
 	},
 
@@ -120,7 +140,7 @@
 	},
 
 	"msgPreferencesIntroduction" : {
-		"message" : "Configuration bla, bla, bla...",
+		"message" : "Plugin configuration",
 		"description" : ""
 	},
 
@@ -462,6 +482,11 @@
 
 	"msgSelectAnUser" : {
 		"message" : "Select an user",
+		"description" : ""
+	},
+
+	"msgErrorDeletingConfiguration" : {
+		"message" : "Error deleting configuration",
 		"description" : ""
 	}
 

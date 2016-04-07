@@ -1,11 +1,11 @@
-
+// Global structure object
 var browserActionData = {};
 
 $(document).ready(function() {
 	loadLanguageLiterals();
 	initBrowserActionDropdowns();
 
-	//
+	// Listener to handle the changes over environments selector
 	$('#environmentValues').on('change', function() {
   		// Clean previous values
   		cleanInfoFields();  
@@ -26,7 +26,7 @@ $(document).ready(function() {
   		});
 	});
 
-	//
+	// Listener to fill the description when the user selects one credential
 	$('#userPassValues').on('change', function() {
 		var envId = Number($('#environmentValues').val()),
 			user = $('#userPassValues option:selected').text();
@@ -38,16 +38,15 @@ $(document).ready(function() {
 		});
 	});
 
-	//
+	// Navigate to home
 	$('#home').click(function() {
 		$('#aboutContent').fadeOut('fast', function() {
 			$('#mainContent').fadeIn('fast');
 		});
 	});
 
-	//
+	// Inject credentials into webpage
 	$('#injectLoginCredentials').click(function() {
-		//chrome.extension.sendMessage({
 		chrome.runtime.sendMessage({
 			action : 'inject',
 			username : browserActionData.username, 
@@ -57,7 +56,7 @@ $(document).ready(function() {
 		});
 	});
 
-	//
+	// Open configuration window/popup
 	$('#configure').click(function() {
 		if (chrome.runtime.openOptionsPage) {
 			// New way to open options pages, if supported (Chrome 42+)
@@ -68,35 +67,41 @@ $(document).ready(function() {
 		}
 	});
 
-	//
+	// Clean area
 	$('#cleanData').click(function() {
 		$('#mainContent').fadeOut('fast', function() {
 			$('#cleanDataContent').fadeIn('fast');
 		});
 	});
 
-	//
+	// Click handler to confirm
 	$('#cleanDataYes').click(function() { 
-		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
+		$('#cleanDataContent').fadeOut('fast', function() {
 			initBrowserActionDropdowns();
-			slaUtils.deleteConfiguration();	
-			$('#mainContent').fadeIn('slow');
+			slaUtils.deleteConfiguration(function(err) {
+				$('#mainContent').fadeIn('slow');
+				if(err) {
+					alert(translate('msgErrorDeletingConfiguration') + ' (' + err + ')');
+				}
+			});	
 		});
 	});
 
-	//
+	// Click handler to cancel
 	$('#cleanDataNo').click(function() {  
-		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
+		$('#cleanDataContent').fadeOut('fast', function() {
 			$('#mainContent').fadeIn('slow');
 		});
 	});
 
-	//
+	// Navigate to GitHub page
 	$('#help').click(function() {
-		alert('helps');
+		chrome.tabs.update({
+     		url: "https://semagarcia.github.io/sema-login-autocompleter"
+		});
 	});
 
-	//
+	// Export configuration to file
 	$('#exportToFile').click(function() {
 		slaUtils.getAllData(function(configuration) {
 			chrome.runtime.sendMessage({
@@ -106,7 +111,7 @@ $(document).ready(function() {
 		});
 	});
 
-	//
+	// Export configuration to clipboard 
 	$('#exportToClipboard').click(function() {
 		slaUtils.getAllData(function(configuration) {
 			chrome.runtime.sendMessage({
@@ -116,23 +121,26 @@ $(document).ready(function() {
 		});
 	});
 
+	// Import configuration from file
 	$('#importFromFile').click(function() {
 		alert('This feature will be published in the next release!');
 	});
 
-	//
+	// Contact with owner
 	$('#contact').click(function() {
-		alert('Contactar');  // ToDo: reemplazar contenido y mostrar datos de contacto
+		chrome.tabs.update({
+     		url: "mailto:test@example.com?subject=SLA&body=Message"
+		});
 	});
 
-	//
+	// Fork the project
 	$('#fork').click(function() {
 		chrome.tabs.update({
      		url: "https://github.com/semagarcia/sema-login-autocompleter"
 		});
 	});
 
-	//
+	// About area
 	$('#about').click(function() {
 		$('#mainContent, #cleanDataContent').fadeOut('fast', function() {
 			$('#aboutContent').fadeIn('fast');
@@ -141,16 +149,12 @@ $(document).ready(function() {
 
 });
 
-// Auxiliar functions
 
-function translate(key, insertIntoDOM) {
-	if(insertIntoDOM) {
-		$('#' + key).text(chrome.i18n.getMessage(key));
-	} else {
-		return chrome.i18n.getMessage(key);
-	}
-}
+// ------------------------
+//   Auxiliar functions
+// ------------------------
 
+// Load all I18N literals
 function loadLanguageLiterals() {
 	translate('msgHomeDescription', true);
 	translate('msgSelectEnvironment', true);
@@ -175,11 +179,18 @@ function loadLanguageLiterals() {
 	translate('msgAbout', true);
 }
 
-function initBrowserActionDropdowns() {
-	//
-	cleanInfoFields();
+// Translate literals based on user's locale (if insertIntoDOM is true, the text will be replaced into DOM)
+function translate(key, insertIntoDOM) {
+	if(insertIntoDOM) {
+		$('#' + key).text(chrome.i18n.getMessage(key));
+	} else {
+		return chrome.i18n.getMessage(key);
+	}
+}
 
-	//
+// Clean fields and init selectors
+function initBrowserActionDropdowns() {
+	cleanInfoFields();
 	slaUtils.getAllData(function(storedData) {
 		_.each(storedData['sema-sla'].environments, function(env) {
 			$('#environmentValues').append('<option value="' + env.envId + '">' + env.envName + '</option>');
@@ -187,6 +198,7 @@ function initBrowserActionDropdowns() {
 	});
 }
 
+// Clean the second selector and the description area
 function cleanInfoFields() {
 	$('#userPassValues').html('');
 	$('#selectedUserInfoDescription').text('');

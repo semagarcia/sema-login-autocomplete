@@ -1,7 +1,12 @@
 {
 	"extName" : {
 		"message" : "Sema Login Autocompleter",
-		"description" : "es-desc"
+		"description" : "es-name"
+	},
+
+	"extDescription" : {
+		"message" : "Gestione las credenciales de cada entorno de sus proyectos de desarrollo web. Es más que un simple autocompletar :-)",
+		"description" : "en-desc"
 	},
 
 
@@ -41,6 +46,21 @@
 
 	"msgLoginInject" : {
 		"message" : "¡Insertar!",
+		"description" : ""
+	},
+
+	"msgInjectNotFound" : {
+		"message" : "No se han encontrado ninguno de los campos para inyectar...",
+		"description" : ""
+	},
+
+	"msgInjectUsernameNotFound" : {
+		"message" : "Campo 'usuario' no encontrado",
+		"description" : ""
+	},
+
+	"msgInjectPasswordNotFound" : {
+		"message" : "Campo 'contraseña' no encontrado",
 		"description" : ""
 	},
 
@@ -120,7 +140,7 @@
 	},
 
 	"msgPreferencesIntroduction" : {
-		"message" : "Ventana de configuración para bla, bla, bla...",
+		"message" : "Configuración del plugin",
 		"description" : ""
 	},
 
@@ -462,6 +482,11 @@
 
 	"msgSelectAnUser" : {
 		"message" : "Seleccione un usuario",
+		"description" : ""
+	},
+
+	"msgErrorDeletingConfiguration" : {
+		"message" : "Error al eliminar la configuración",
 		"description" : ""
 	}
 
