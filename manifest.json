@@ -5,9 +5,9 @@
   "default_locale" : "en",
   "description" : "__MSG_extDescription__",
   "author" : "Sema (José Manuel García García)",
-  "browser_action" : {   // This is how you load Browser Action. Nearly equal to Page one
+  "browser_action" : {
       "default_icon" : "icons/16/s2.png",
-      "default_title" : "Sema Login Autocompleter Extension",
+      "default_title" : "Sema Login Autocomplete Extension",
       "default_popup" : "browser/browser-action.html"
   },
   "background" : {
@@ -24,9 +24,9 @@
       }
     }
   },
-  "content_scripts": [   // If we need access to the DOM, we have to use a content script
+  "content_scripts": [
     {
-      "matches": ["<all_urls>"],  // "*://*/*"
+      "matches": ["<all_urls>"], 
       "css": ["styles/main.css"],
       "js": [
         "libs/jquery.js",
@@ -36,12 +36,12 @@
     }
   ],
   "icons" : {
-    "16" : "icons/16/s2.png",  // Used as the favicon for an extension's pages
-    "48" : "icons/48/s2.png",   // Used in the extensions management page (chrome://extensions)
-    "128" : "icons/128/s2.png"     // Used during installation and by the Chrome Web Store
+    "16" : "icons/16/s2.png",  
+    "48" : "icons/48/s2.png",   
+    "128" : "icons/128/s2.png"    
   },
   "offline_enabled" : true,
-  "options_page": "options/options.html",   // Gives access to extension options from Extensions Manager
+  "options_page": "options/options.html",  
   "options_ui": {
     "page": "options/options.html",
     "chrome_style": true
