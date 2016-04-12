@@ -129,6 +129,26 @@
 		"description" : ""
 	},
 
+	"msgAboutContent1" : {
+		"message" : "",
+		"description" : ""
+	},
+
+	"msgAboutContent2" : {
+		"message" : "",
+		"description" : ""
+	},
+
+	"msgAboutContent3" : {
+		"message" : "",
+		"description" : ""
+	},
+
+	"msgAboutContent4" : {
+		"message" : "",
+		"description" : ""
+	},
+
 	// ------------------------------------------------------
 	//                Preferences
 	// ------------------------------------------------------

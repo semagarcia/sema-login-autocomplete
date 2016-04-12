@@ -129,6 +129,26 @@
 		"description" : ""
 	},
 
+	"msgAboutContent1" : {
+		"message" : "Extensión experimental en versión beta para agilizar el login en las aplicaciones de los proyectos de desarrollo",
+		"description" : ""
+	},
+
+	"msgAboutContent2" : {
+		"message" : "Sema (José Manuel García)",
+		"description" : ""
+	},
+
+	"msgAboutContent3" : {
+		"message" : "",
+		"description" : ""
+	},
+
+	"msgAboutContent4" : {
+		"message" : "",
+		"description" : ""
+	},
+
 	// ------------------------------------------------------
 	//                Preferences
 	// ------------------------------------------------------

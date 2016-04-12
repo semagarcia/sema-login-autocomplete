@@ -177,6 +177,10 @@ function loadLanguageLiterals() {
 	translate('msgContact', true);
 	translate('msgGithubFork', true);
 	translate('msgAbout', true);
+	translate('msgAboutContent1', true);
+	translate('msgAboutContent2', true);
+	translate('msgAboutContent3', true);
+	translate('msgAboutContent4', true);
 }
 
 // Translate literals based on user's locale (if insertIntoDOM is true, the text will be replaced into DOM)
