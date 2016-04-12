@@ -129,7 +129,7 @@ $(document).ready(function() {
 	// Contact with owner
 	$('#contact').click(function() {
 		chrome.tabs.update({
-     		url: "mailto:test@example.com?subject=SLA&body=Message"
+     		url: "mailto:sema.login.autocomplete@gmail.com?subject=[Contact]%20SLA-Extension&body=[Your message here]"
 		});
 	});
 
