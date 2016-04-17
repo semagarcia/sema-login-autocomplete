@@ -130,17 +130,17 @@
 	},
 
 	"msgAboutContent1" : {
-		"message" : "Extensión experimental en versión beta para agilizar el login en las aplicaciones de los proyectos de desarrollo",
+		"message" : "Extensión experimental en versión beta para agilizar el login en las aplicaciones de los proyectos de desarrollo.",
 		"description" : ""
 	},
 
 	"msgAboutContent2" : {
-		"message" : "Sema (José Manuel García)",
+		"message" : "Para poder inyectar los credenciales, debe indicar una expresión (selector jQuery) para acceder al campo de texto (por ejemplo, '#userInput' ó '.login-form > input.password').",
 		"description" : ""
 	},
 
 	"msgAboutContent3" : {
-		"message" : "",
+		"message" : "Sema (José Manuel García)",
 		"description" : ""
 	},
 
