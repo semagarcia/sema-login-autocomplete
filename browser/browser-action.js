@@ -97,7 +97,7 @@ $(document).ready(function() {
 	// Navigate to GitHub page
 	$('#help').click(function() {
 		chrome.tabs.update({
-     		url: "https://semagarcia.github.io/sema-login-autocompleter"
+     		url: "http://semagarcia.github.io/sema-login-autocomplete/"
 		});
 	});
 
